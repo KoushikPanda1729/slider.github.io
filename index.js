@@ -13,7 +13,6 @@ previous.addEventListener("click", () => {
             previous.style.display = `none`;
         }
         slideImg();
-        console.log(counter);
     }
 })
 
@@ -26,7 +25,6 @@ next.addEventListener("click", () => {
             next.style.display = `none`;
         }
         slideImg();
-        console.log(counter);
     }
 })
 
