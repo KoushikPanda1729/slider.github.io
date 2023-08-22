@@ -11,6 +11,9 @@ previous.addEventListener("click", () => {
         counter--;
         if (counter == 0) {
             previous.style.display = `none`;
+
+        }
+        if (counter == 0 || counter > 0) {
             next.style.display = "block";
         }
         slideImg();
@@ -26,6 +29,9 @@ next.addEventListener("click", () => {
         counter++;
         if (counter == sildes.length - 1) {
             next.style.display = `none`;
+
+        }
+        if (counter == 0 || counter > 0) {
             previous.style.display = "block";
         }
         slideImg();
