@@ -11,6 +11,7 @@ previous.addEventListener("click", () => {
         counter--;
         if (counter == 0) {
             previous.style.display = `none`;
+            next.style.display = "block";
         }
         slideImg();
     }
@@ -18,11 +19,14 @@ previous.addEventListener("click", () => {
 
 const next = document.querySelector("#button2");
 
+
 next.addEventListener("click", () => {
+
     if (counter < sildes.length - 1) {
         counter++;
         if (counter == sildes.length - 1) {
             next.style.display = `none`;
+            previous.style.display = "block";
         }
         slideImg();
     }
